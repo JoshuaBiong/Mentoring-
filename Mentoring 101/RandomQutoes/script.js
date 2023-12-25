@@ -40,12 +40,9 @@ const url = "https://type.fit/api/quotes"
 
 let getQuote = () => {
 
-
-
     fetch(url).then((data) => data.json()).then((item) => {
         let random = Math.floor(Math.random() * item.length)
         quote.innerHTML = item[random].text
-
 
     })
 }
