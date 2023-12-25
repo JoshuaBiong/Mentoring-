@@ -18,6 +18,8 @@
 //     }
 // ];
 
+// the code below generating code using array objects
+
 // const quote = document.querySelector('.quotes')
 // const gbtn = document.querySelector('.btn')
 
@@ -26,6 +28,10 @@
 
 //     quote.innerHTML = quotes[random].quote
 // })
+
+
+
+// Code below generating code usig API
 
 const quote = document.querySelector('.quotes')
 const gbtn = document.querySelector('.btn')
