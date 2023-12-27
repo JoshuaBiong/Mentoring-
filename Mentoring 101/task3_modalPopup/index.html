@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Pop-up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- content of the page  -->
+    <div class="page">
+        <div class="button large pop-button" data-target="#main-target">Main Pop-up</div>
+        <div class="button large pop-button" data-target="#secondary-target">Secondary Pop-up</div>
+    </div>
+    <!-- end of content of the page  -->
+
+    <!-- Pop-up main modal page -->
+    <div class="pop" id="main-target">
+        <div class="pop-overlay pop-button" data-target="#main-target"></div>
+        <div class="pop-inner">
+            <h2>Main Pop Up Title</h2>
+            <h3>Pop subtitle</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt alias recusandae excepturi aliquid. Facilis, quia. Aspernatur tempore laudantium rerum necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugiat iste
+                optio similique ipsam aliquam blanditiis accusantium fuga est rem.
+            </p>
+            <button class="button pop-button" data-target="#main-target">Close</button>
+        </div>
+    </div>
+
+    <!-- End of Pop up main modal page  -->
+
+    <!-- Pop-up secondary modal page -->
+    <div class="pop" id="secondary-target">
+        <div class="pop-overlay pop-button" data-target="#secondary-target"></div>
+        <div class="pop-inner">
+            <h2>Secindary Up Title</h2>
+            <h3>Pop subtitle</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt alias recusandae excepturi aliquid.</p>
+            <button class="button pop-button" data-target="#secondary-target">Close</button>
+        </div>
+    </div>
+
+    <!-- End of Pop up seconday  modal page  -->
+</body>
+
+</html>

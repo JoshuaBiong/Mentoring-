@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    appearance: none;
+    border: none;
+    outline: none;
+    display: inline-block;
+    background-color: rgb(84, 191, 155);
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0px 15px;
+    box-shadow: 0px 3px 6px rgb(90, 96, 94);
+}
+
+.button.large {
+    font-size: 24px;
+    padding: 15px 30px;
+}
+
+.pop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
+}
+
+.pop.is-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.pop-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: rgb(90, 96, 94);
+}
+
+.pop-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    padding: 50px 30px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 3px 6px rgb(90, 96, 94);
+}
+
+.pop h2 {
+    color: #313131;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.pop h3 {
+    color: #888;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.pop p {
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.pop p:last-of-type {
+    margin-bottom: 30px;
+}

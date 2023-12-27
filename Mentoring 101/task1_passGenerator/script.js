@@ -3,7 +3,6 @@ const btn = document.querySelector('button')
 const alphNum = "qwertyuioplkjhgfdsamnbvcxzQWERTYUIOPLKJHGFDSAMNBVCXZ0987654321';/.,!@#$%^&*()_+"
 const lengths = 6;
 
-
 function generatePassowrd() {
     let pass = ''
 
